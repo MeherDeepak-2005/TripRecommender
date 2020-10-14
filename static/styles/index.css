@@ -1,0 +1,93 @@
+body {
+    font-family: "Lato", sans-serif;
+    color: chartreuse;
+}
+
+.complete_page{
+    background-color: chartreuse;
+}
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+
+}
+
+.sidenav {
+    height: 100%;
+    overflow-x: hidden;
+    padding-top: 0px;
+    margin-left: 0px;
+    float: left
+
+}
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%;
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 300px;
+        left: 20px;
+    }
+
+    .login-form{
+        margin-top: 15%;
+        float:right;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    color: Black ;
+    padding-left:200px;
+    padding-right:80px;
+    padding-top:80px;
+    padding-bottom:80px;
+
+
+
+}
+
+.login-main-text h2{
+    font-weight: 300;
+    padding: 20px;
+    background-color:black;
+    color:white;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
+
+
