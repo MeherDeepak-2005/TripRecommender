@@ -24,7 +24,7 @@ def Home_Page():
         return render_template("index.html")
         
     
-@app.route('/')
+@app.route('/centre_page')
 def home_page():
     if "user" in session:
         user =  session["user"]
