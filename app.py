@@ -7,7 +7,7 @@ import os
 
 
 app = Flask(__name__)
-
+app.secret_key = "H8QEt7JrraIV"
 app.permanent_session_lifetime = timedelta(days=14)
 
 
@@ -43,4 +43,4 @@ def user(usr):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
