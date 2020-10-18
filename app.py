@@ -13,11 +13,11 @@ app.permanent_session_lifetime = timedelta(days=14)
 
 
 
-@app.route('/Home_Page', methods=["POST","GET"])
-def Home_Page():
+@app.route('/SignIN', methods=["POST","GET"])
+def SignIN():
     if request.method == "POST":
         session.permanent = True
-        user = request.form["usr_name"]
+        user = request.form["usr"]
         session['user'] = user
         return redirect(url_for("user", usr=user))
     else:
@@ -30,7 +30,7 @@ def home_page():
         user =  session["user"]
         return render_template("main_page.html")
     else:
-        return redirect(url_for('Home_Page'))
+        return redirect(url_for('SignIN'))
 
 
 @app.route('/<usr>')
